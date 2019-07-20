@@ -6,7 +6,7 @@ path="./NCBI/Fulltext2018/"
 if not os.path.exists(path):
     os.mkdir(path)
 Entrez.email = "jiajmeurida@163.com"
-handle = Entrez.esearch(db="pmc",retmax=100,retstart=0,term = "2018[pdat]")
+handle = Entrez.esearch(db="pmc",retmax=100,retstart=0,term = "2018[pdat]")  #日期可以修改
 records = Entrez.read(handle)
 number = records["Count"]
 #b=records["IdList"]    #获取具体的UID
