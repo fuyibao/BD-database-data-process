@@ -5,7 +5,7 @@ import sys,os
 path="/media/EXTend2018/Fuyibao2018/NCBI/2016Fulltext_XML/"
 if not os.path.exists(path):
     os.mkdir(path)
-Entrez.email = "jiajmeurida@163.com"
+Entrez.email = "fuyibao123@163.com"
 handle = Entrez.esearch(db="pmc",retmax=100,retstart=0,term = "2017[pdat]")  #日期可以修改
 records = Entrez.read(handle)
 number = records["Count"]
